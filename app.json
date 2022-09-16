@@ -1,70 +1,164 @@
 {
-  "name": "source cristein",
-  "description": "اهلا بك في سورس كرستين العرب  { @cr_source }",
+  "name": "Cristen Userbot",
+  "description": "Userbot created by a @wjj_u and join https://t.me/cr_source for any problems or support",
   "logo": "https://telegra.ph/file/54699e9f531dfac087926.jpg",
-  "keywords": ["plugin","modular","productivity"],
-  "repository": "https://github.com/Wjut/crsource1",
+    "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/spandey112/SensibleUserbot",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "CUSTOM_PMPERMIT": {
+      "description": "Enter Custom Middle Pm Permit To Show When Some One PM You.",
+      "value": "",
+      "required": false
+    },
     "ALIVE_NAME": {
-      "description": "هنا ضع اسم التلجرام الخاص بك",
+      "description": "Fill your Full name or Username like @wjj_u",
       "value": ""
     },
     "APP_ID": {
-      "description": "هنا ضع الايبي ايدي الخاص بك يتكون من ارقام", 
+      "description": "Get this value from my.telegram.org! Please do not steal",
       "value": ""
     },
+    "REM_BG_API_KEY": {
+      "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
+      "value": "",
+      "required": false
+    },
     "API_HASH": {
-      "description": "هنا ضع الايبي هاش الخاص بك يتكون من احرف و ارقام",
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "Create a private group add rose  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
+      "value": ""
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Create a private group add rose bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
       "value": ""
     },
     "STRING_SESSION": {
-      "description": " ضع كود تيرمكس",
+      "description": "Get this value from Termux Python 3",
       "value": ""
     },
-    "TG_BOT_USERNAME": {
-      "description": " ضع معرف بوتك بدون @",
+    "GITHUB_ACCESS_TOKEN": {
+      "description": "Your Github Access Token for gitcommit plugin.Google 'Github access token' to find.",
+      "value": "",
+      "required": false
+    },
+    "GIT_REPO_NAME": {
+      "description": "Your repo name Example: No Need For this, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "value": "",
+      "required": false
+    },
+    "LYDIA_API_KEY": {
+      "description": "Needed for Lydia AI. Follow https://telegra.ph/Lydia-09-05 to get your API.",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Go to https://dashboard.heroku.com/account, وانزل تحت خالص اضغط reveal key وانسخه",
       "value": ""
     },
-    "TG_BOT_TOKEN": {
-      "description": "ضع توكن بوتك",
+    "HEROKU_APP_NAME": {
+      "description": "اول اسم فوق خالص.",
       "value": ""
     },
-    "COMMAND_HAND_LER": {
-      "description": "اتركة كما هوة او ضع الأمر الذي تريده بدلا من النقطة",
-      "value": "."
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "توكن بوتك ولازم تكون مفعل الانلاين.",
+      "value": ""
+    },
+    "SUDO_USERS": {
+      "description": "ايدي حسابك ",
+      "value": "709723121",
+      "required": true
+    },
+    "CHROME_BIN": {
+      "description": "For سيبها . ",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
+    },
+    "CHROME_DRIVER": {
+      "description": "سيبها علي وضعها ",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "اعمل بوت وفعل الانلاين وحط يوزر بوتك",
+      "value": ""
+    },
+    "DOWNLOAD_PFP_URL_CLOCK": {
+      "description": "رابط صورتك تقدر تجيبها من @tel_65bot هنا",
+      "value": "",
+      "required": false
+    },
+    "OPEN_WEATHER_MAP_APPID": {
+      "description": "لو مش عرفها سبها مش حوارfrom https://api.openweathermap.org/data/2.5/weather",
+      "required": false
     },
     "TZ": {
-      "description": "ضع القاره / عاصمة بلدك ( اذا كنت لاتعرفه اتركة كما هوة )",
+      "description": "بس يبابا متغيرهاش",
       "value": "Africa/Cairo",
       "required": false
     },
-    "UPSTREAM_REPO": {
-      "description": "لاتغيرة",
-      "value": "devbarlo",
-      "required": false
+	
+	"SENDER_ID": {
+      "description": "ايديهك ",
+      "value": "",
+      "required": true
+    },
+	
+	"Agreement": {
+      "description": "Do You Owe Ceo White hat Cracks And Mr White Who Helped To Create this Awesome bot Turn This True",
+      "value": "true",
+      "required": true
     }
+
   },
   "addons": [{
     "plan": "heroku-postgresql",
     "options": {
-      "version": "12"
+      "version": "14"
     }
   }],
-  "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
-  },{
-    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-  },{
-    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-  },{
-    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-  },{
-    "url": "heroku/python"
-  }]
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/amivin/aria2-heroku.git"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
