@@ -86,7 +86,7 @@ _set_bot () {
     echo "
 
     "
-    python3 -m wjjut
+    python3 -m wjut
 }
 
 _set_bot
