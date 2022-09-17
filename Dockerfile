@@ -1,13 +1,13 @@
-FROM telethonArab/telethonAr:alpine
+FROM wjut/crsource1:alpine
 
 #clonning repo 
-RUN git clone https://github.com/telethonArab/telethonAr/tree/master.git /root/Arab
+RUN git clone https://github.com/wjut/crsource1/tree/master.git /root/userbot
 #working directory 
-WORKDIR /root/Arab
+WORKDIR /root/userbot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/Arab/bin:$PATH"
 
-CMD ["python3","-m","Arab"]
+CMD ["python3","-m","userbot"]
